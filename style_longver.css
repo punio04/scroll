@@ -1,0 +1,983 @@
+/*css reset*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none
+}
+
+html:focus-within {
+  scroll-behavior: smooth
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit
+}
+
+@media(prefers-reduced-motion:reduce) {
+  html:focus-within {
+    scroll-behavior: auto
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+/**********共通**********/
+body {
+  color: #111;
+  background-color: #fff;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+/*CTAボタン*/
+.-btn_container a.cta_btn {
+  display: inline-block;
+  color: #fff;
+  background: linear-gradient(#D6BA8A, #8A613A);
+  padding: 15px 30px;
+  border-radius: 3px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .-btn_container a.cta_btn {
+    font-size: 20px;
+    padding: 30px 52px;
+  }
+}
+
+/**********site_header**********/
+#site_header .site_header_container {
+  display: flex;
+  flex-wrap: nowrap;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+#site_header .site_header_logo {
+  width: 120px;
+  margin: 12px 15px;
+}
+
+#site_header .site_header_text {
+  position: relative;
+  width: 100%;
+  margin: 12px auto;
+  text-align: right;
+}
+
+#site_header .site_header_text .-text {
+  font-size: 8px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-20%);
+  -webkit- transform: translateY(-20%);
+}
+
+@media screen and (min-width: 768px) {
+  #site_header .site_header_text .-text {
+    font-size: 12px;
+  }
+}
+
+/**********site_body**********/
+.site_body_container {
+  padding-top: 10px;
+}
+
+/*****トップビジュアル*****/
+#top_visual_section {
+  width: 100%;
+  max-width: 1024px;
+  margin: auto;
+}
+
+#top_visual_section .top_visual {
+  width: 100%;
+  max-width: 1024px;
+  height: 0;
+  margin: auto;
+  padding-top: 125%;
+  overflow: hidden;
+  background-image: url(img/KV.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#top_visual_section .top_visual.visual_consulting {
+  background-image: url(img/KV_consulting_new.jpg);
+}
+
+#top_visual_section .top_visual.visual_se {
+  background-image: url(img/KV_SE_new.jpg);
+}
+
+#top_visual_section .top_visual.visual_marketing {
+  background-image: url(img/KV_MARKETING.jpg);
+}
+
+#top_visual_section .-text {
+  color: #E50113;
+  font-weight: bold;
+  font-size: 10px;
+  text-align: center;
+  letter-spacing: 0.1px;
+}
+
+#top_visual_section h2 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+#top_visual_section .top_visual {
+  margin-top: 5px;
+  position: relative;
+}
+
+#top_visual_section .top_visual .-btn_container {
+  position: absolute;
+  bottom: 20%;
+  width: 100%;
+  text-align: center;
+}
+
+#top_visual_section .top_visual .-text-container {
+  position: absolute;
+  bottom: calc(3% - 1px);
+  width: 100%;
+}
+
+#top_visual_section .top_visual .-text-container.longer {
+  position: absolute;
+  bottom: calc(1%);
+  width: 100%;
+}
+
+#top_visual_section .top_visual .-text-container p {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.assign_img {
+  width: 60%;
+}
+
+.sp {
+  display: none;
+}
+
+.main_top {
+  text-align: left;
+  width: 900px;
+}
+
+.top_img {
+  margin-bottom: 40px;
+  width: 900px;
+}
+
+@media screen and (max-width: 768px) {
+  .top_img:not(.sp) {
+    display: none;
+  }
+
+  .sp {
+    display: inline-block;
+  }
+
+  .under_form {
+    height: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main .top_img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .main .main_top {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 910px) {
+  #top_visual_section .-text {
+    font-size: 16px;
+  }
+
+  #top_visual_section h2 {
+    font-size: 30px;
+  }
+
+  #top_visual_section .top_visual {
+    width: 100%;
+    max-width: 2048px;
+    height: 700px;
+    margin: auto;
+    padding-top: 0px;
+    overflow: hidden;
+    background-image: url(img/KV_PC_COMMON.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #top_visual_section .top_visual.visual_consulting {
+    background-image: url(img/KV_consulting_new_PC.jpg);
+  }
+
+  #top_visual_section .top_visual.visual_se {
+    background-image: url(img/KV_SE_new_PC.jpg);
+  }
+
+  #top_visual_section .top_visual.visual_marketing {
+    background-image: url(img/KV_PC_MARKETING.jpg);
+  }
+
+  #top_visual_section .top_visual .-btn_container {
+    position: absolute;
+    bottom: 18%;
+    left: -16%;
+    text-align: center;
+  }
+
+  #top_visual_section .top_visual .-text-container p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #top_visual_section {
+    max-width: 100%;
+  }
+
+  #top_visual_section .top_visual {
+    height: 700px;
+  }
+
+  #top_visual_section .top_visual .-text-container {
+    bottom: calc(3% + 5px);
+  }
+
+  #top_visual_section .top_visual .-text-container.longer {
+    bottom: calc(3%);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  #top_visual_section .top_visual {
+    height: 800px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  #top_visual_section .top_visual {
+    height: 1000px;
+  }
+}
+
+/*****TVCM*****/
+.tv_cm {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+/*****ご紹介企業例*****/
+#company_section h3 {
+  padding: 12px;
+  background-color: #F0EFEB;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #333;
+}
+
+#company_section .company_logo {
+  margin: 0 auto;
+  padding: 12px 0;
+  width: 80%;
+  max-width: 400px;
+}
+
+#company_section .company_logo p.-text {
+  margin-top: 4px;
+  font-size: 8px;
+  text-align: right;
+}
+
+@media screen and (min-width: 768px) {
+  #company_section .-container_inner {
+    margin-bottom: 20px;
+  }
+
+  #company_section h3 {
+    font-size: 24px;
+  }
+
+  #company_section .company_logo {
+    max-width: 600px;
+  }
+}
+
+/*****assingが選ばれる理由*****/
+#merit_seciton .-container_inner {
+  border-top: 5px solid #E50113;
+  background-color: #F0EFEB;
+  padding-bottom: 10px;
+}
+
+#merit_seciton h3 {
+  position: relative;
+  text-align: center;
+  margin: 15px auto;
+}
+
+#merit_seciton h3 img.-logo {
+  display: inline-block;
+  width: 100px;
+}
+
+#merit_seciton h3 span {
+  display: inline-block;
+  position: relative;
+  bottom: 1.5px;
+  color: #E50113;
+  font-size: 18px;
+  letter-spacing: 2px;
+  padding-left: 5px;
+}
+
+#merit_seciton .merit_container {
+  position: relative;
+  margin: 35px auto;
+  padding-bottom: 20px;
+  width: 85%;
+  max-width: 600px;
+  text-align: center;
+  background-color: #fff;
+}
+
+#merit_seciton .merit01::before {
+  position: absolute;
+  display: block;
+  content: url(img/01_gold@2x.png);
+  transform: translate(-40%, -50%) scale(0.2);
+}
+
+#merit_seciton .merit02::before {
+  position: absolute;
+  display: block;
+  content: url(img/02_gold@2x.png);
+  transform: translate(-40%, -50%) scale(0.2);
+}
+
+#merit_seciton .merit_container h4 {
+  padding: 20px 0px;
+  color: #333;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+}
+
+#merit_seciton .merit_container img {
+  width: 140px;
+  margin: 0 auto 20px auto;
+}
+
+#merit_seciton .merit_container .-text {
+  font-size: 13px;
+}
+
+#merit_seciton .merit_container .-btn_container {
+  margin: 20px 0 0 0;
+}
+
+@media screen and (min-width: 768px) {
+  #merit_seciton h3 span {
+    font-size: 24px;
+  }
+
+  #merit_seciton .merit_container h4 {
+    font-size: 20px;
+  }
+
+  #merit_seciton .merit_container .-text {
+    font-size: 16px;
+  }
+}
+
+/*****求人例*****/
+#job_section .-container_inner {
+  background-image: url(img/BG_red.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 20px;
+}
+
+#job_section h3 {
+  padding: 12px;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #fff;
+}
+
+#job_section .job_container {
+  margin: 0px auto 20px auto;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  background-color: #fff;
+}
+
+#job_section .job_container h4 {
+  background-color: #F0EFEB;
+  padding: 12px 0;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  color: #333
+}
+
+#job_section .job_container h4 .-detail {
+  font-weight: normal;
+  font-size: 13px;
+  padding-left: 10px;
+}
+
+#job_section .job_container p.income {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+#job_section .job_container p.income .-underline {
+  border-bottom: 0.5px solid #E50113;
+  padding-bottom: 6px;
+}
+
+#job_section .job_container p.income .-num {
+  font-size: 26px;
+  color: #A37F49;
+}
+
+#job_section .job_container .-description {
+  padding: 10px 0;
+  width: 70%;
+  max-width: 250px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#job_section .job_container .-description p {
+  font-size: 13px;
+}
+
+#job_section .-btn_container {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #job_section h3 {
+    font-size: 30px;
+  }
+
+  #job_section .job_container h4 {
+    font-size: 16px;
+  }
+
+  #job_section .job_container h4 .-detail {
+    font-size: 14px;
+  }
+
+  #job_section .job_container p.income .-num {
+    font-size: 30px;
+  }
+}
+
+/*****ご支援事例*****/
+#case_section h3 {
+  padding: 12px;
+  background-color: #F0EFEB;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #333;
+}
+
+#case_section .case_container {
+  background-image: url(img/BG_city.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0;
+}
+
+#case_section .case_title {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#case_section .case_title .case_title_before {
+  background-color: #F0EFEB;
+  width: 42%;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 5px 0;
+}
+
+#case_section .case_title .case_title_after {
+  background: linear-gradient(to right, #DB3545, #A5000D);
+  color: #fff;
+  width: 42%;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 5px 0;
+}
+
+#case_section .case_box {
+  background-color: #fff;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto 5px auto;
+  display: flex;
+}
+
+#case_section .case_box .case_profile {
+  width: 16%;
+  font-size: 8px;
+  text-align: center;
+  padding-bottom: 3px;
+  color: #333;
+}
+
+#case_section .case_box .case_profile img {
+  width: 80%;
+  margin: 5px auto;
+}
+
+#case_section .case_box .case_before {
+  width: 42%;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+#case_section .case_box .case_after {
+  width: 42%;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  position: relative;
+}
+
+#case_section .case_box .case_after::before {
+  position: absolute;
+  display: block;
+  content: url(img/icon_triangle@2x.png);
+  transform: translate(-15%, 0%) scale(0.04);
+}
+
+#case_section .case_box .-text_size {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#case_section .case_box .-text_color {
+  color: #E50113;
+}
+
+#case_section .-btn_container {
+  text-align: center;
+  margin: 40px auto 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  #case_section h3 {
+    font-size: 24px;
+  }
+
+  #case_section .case_title,
+  #case_section .case_box {
+    max-width: 600px;
+  }
+
+  #case_section .case_title .case_title_before {
+    background-color: #F0EFEB;
+    width: 42%;
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+  #case_section .case_title .case_title_after {
+    width: 42%;
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+  #case_section .case_box .case_profile {
+    font-size: 12px;
+  }
+
+  #case_section .case_box .case_before {
+    font-size: 16px;
+  }
+
+  #case_section .case_box .case_after {
+    font-size: 16px;
+  }
+
+  #case_section .case_box .case_after::before {
+    transform: translate(-28%, 0%) scale(0.05);
+  }
+
+  #case_section .case_box .-text_size {
+    font-size: 24px;
+  }
+}
+
+/*****ご利用者の声*****/
+#voice_section .-container_inner {
+  background-color: #F0EFEB;
+  padding-bottom: 40px;
+}
+
+#voice_section h3 {
+  padding: 12px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #333;
+}
+
+#voice_section .voice_container {
+  width: 85%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#voice_section .voice_container .voice_visual {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
+  min-height: 200px;
+}
+
+#voice_section .voice01 .voice_visual {
+  background-image: url(img/voice1.jpg);
+}
+
+#voice_section .voice02 .voice_visual {
+  background-image: url(img/voice2.jpg);
+}
+
+#voice_section .voice_container .voice_visual p {
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  position: absolute;
+  line-height: 1.5em;
+  letter-spacing: 1.5px;
+}
+
+#voice_section .voice01 .voice_visual p {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+
+#voice_section .voice02 .voice_visual p {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+}
+
+#voice_section .voice_container .voice_text {
+  background-color: #fff;
+  font-size: 14px;
+  padding: 20px 10px;
+}
+
+#voice_section .voice_container .voice_text .-profile {
+  color: #A37F49;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  #voice_section .voice_container {
+    max-width: 600px;
+  }
+
+  #voice_section .voice_container .voice_visual {
+    padding: 160px 0;
+  }
+
+  #voice_section h3 {
+    font-size: 24px;
+  }
+
+  #voice_section .voice_container .voice_visual p {
+    font-size: 16px;
+  }
+
+  #voice_section .voice01 .voice_visual p {
+    left: 20px;
+  }
+
+  #voice_section .voice02 .voice_visual p {
+    right: 20px;
+  }
+
+  #voice_section .voice_container .voice_text {
+    font-size: 16px;
+    padding: 30px 20px;
+  }
+
+  #voice_section .voice_container .voice_text .-profile {
+    font-size: 14px;
+  }
+}
+
+
+/*****CTA form*****/
+#form_section h3 {
+  padding: 50px 0;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #fff;
+  background-image: url(img/BG_red_short.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#form_section .form_slide06 .answer input {
+  float: left;
+  width: calc(50% - 18px) !important;
+  /* style.cssと組み合わせるとなぜか干渉するので上書き */
+  height: 51px;
+  padding-left: 25px;
+  margin-left: 8px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #212121;
+  border: none;
+}
+
+/*https://assign-inc.com/assign-career-support-agency-consul-3/ より取得したHTMLをリデザイン*/
+#appointBookForm {
+  background-color: #F0EFEB;
+}
+
+#entryForm {
+  width: 85%;
+  max-width: 600px;
+  margin: 0px auto;
+  padding: 20px 0 0 0;
+}
+
+#entryForm .form_flex {
+  margin-bottom: 10px;
+}
+
+#entryForm input {
+  background-color: #fff;
+  border: none;
+  border-radius: 2px;
+  height: 3em;
+  font-size: 16px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+#entryForm select {
+  height: 3em;
+  width: 100%;
+  border: none;
+  border-radius: 2px;
+  font-size: 16px;
+  appearance: none;
+  padding: 0 10px;
+}
+
+#entryForm textarea {
+  height: 10em;
+  width: 100%;
+  border: none;
+  border-radius: 2px;
+  font-size: 16px;
+  appearance: none;
+  padding: 8px 10px;
+}
+
+#entryForm ::placeholder {
+  color: #DDC49B;
+}
+
+#entryForm select:invalid {
+  color: #DDC49B;
+}
+
+#entryForm .form_flex label {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #555;
+}
+
+#entryForm p.book-attention {
+  text-align: center;
+  font-size: 12px;
+  margin: 10px auto;
+}
+
+#entryForm p.book-attention a {
+  color: #E50113
+}
+
+#entryForm .button-area {
+  background-image: url(img/BG_red_short.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+  margin: 0 calc(50% - 50vw);
+  width: 100vm;
+}
+
+#formSubmit {
+  display: block;
+  margin: 30px auto;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 2px;
+  background-color: #E2CEAE;
+  color: #fff;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+
+#formSubmitLoading {
+  display: none;
+  margin: 30px auto;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 2px;
+  background-color: #E2CEAE;
+  color: #fff;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  width: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  #form_section h3 {
+    font-size: 20px;
+  }
+
+  .button-area #formSubmitLoading {
+    width: 90%;
+  }
+}
+
+/**********site_footer**********/
+#site_footer .site_footer_container {
+  width: 90%;
+  margin: 10px auto;
+}
+
+#site_footer .site_footer_container img.logo {
+  width: 90px;
+  margin: 10px auto;
+}
+
+#site_footer .site_footer_container p.copyright {
+  font-size: 10px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #site_footer .site_footer_container p.copyright {
+    font-size: 14px;
+  }
+}
