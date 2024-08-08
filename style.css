@@ -1120,21 +1120,21 @@ dd {
 /*スライダー*/
 #form_section .form_slider {
   height: 795px;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  position: relative;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+  position: relative !important;
 }
 
 #form_section .form_slider_container {
   width: 800vw;
   max-width: 5600px;
   height: 795px;
-  position: relative;
-  padding: 0;
-  display: flex;
-  justify-content: flex-start;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
+  position: relative !important;
+  padding: 0 !important;
+  display: flex !important;
+  justify-content: flex-start !important;
+  scroll-behavior: smooth !important;
+  scroll-snap-type: x mandatory !important;
 }
 
 #form_section .form_slide {
