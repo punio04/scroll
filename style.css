@@ -1126,7 +1126,7 @@ dd {
 }
 
 #form_section .form_slider_container {
-  width: 800vw;
+  width: 800vw !important;
   max-width: 5600px;
   height: 795px;
   position: relative !important;
