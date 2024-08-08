@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <title>株式会社アサイン</title>
+
+  <!--css-->
+  <link rel="stylesheet" href="style_longver.css">
+  <link rel="stylesheet" href="style.css">
+  <!--js-->
+  <script type="module" src="index_q_form.js"></script>
+</head>
+
+<body>
+  <header id="site_header">
+    <div class="site_header_container container">
+      <h1 class="site_header_logo"><a href=""><img class="-logo" src="img/logo.png" alt="assign logo"></a></h1>
+      <div class="site_header_text">
+        <p class="-text">若手ハイエンド特化の転職エージェント</p>
+      </div>
+    </div>
+  </header>
+
+  <div id="site_body">
+    <div class="site_body_container container">
+      <div class="main_section" id="main" role="main">
+        <!--トップビジュアル-->
+        <div id="top_visual_section" class="section_container">
+          <div class="-container_inner">
+            <p class="-text">あなた専用の選考対策で内定をサポート</p>
+            <h2>20代~30代ハイエンド特化の転職サービス</h2>
+            <div class="top_visual">
+              <div class="-btn_container"><a class="cta_btn" href="#form_section">転職サービスに申し込む >></a></div>
+              <div class="-text-container">
+                <p>20代-30代向け オーダーメイドのキャリアプラン資料を作成してご提案</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="company_section" class="section_container">
+          <div class="-container_inner">
+            <h3>ご紹介企業例</h3>
+            <div class="company_logo">
+              <img src="img/LP_firm.png">
+              <p class="-text">※掲載企業例は一例です</p>
+            </div>
+          </div>
+        </div>
+
+        <!--キャリア相談に申し込み-->
+        <div id="form_section" class="section_container">
+          <div class="-container_inner">
+            <h3><span class="-bg">無料</span>キャリア相談に申し込み</h3>
+            <form id="apply_form" class="apply_form">
+              <div class="form_slider" id="form_scroll_area">
+                <div class="form_slider_container">
+
+                  <!-- 経験社数 -->
+                  <div class="form_slide form_slide01 form_radio">
+                    <div class="header">
+                      <div class="q_num">Q1</div>
+                      <div class="-num"><span class="-emphasis">1</span>/8</div>
+                      <div class="progress">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="question"><span class="-emphasis">経験社数</span>を教えてください</div>
+                    </div>
+                    <div class="answer">
+                      <input type="radio" class="scroll_next" name="jobChangeCount" id="q01_01" value="1"
+                        required="required"><label for="q01_01">1社</label>
+                      <input type="radio" class="scroll_next" name="jobChangeCount" id="q01_02" value="2"><label
+                        for="q01_02">2社</label>
+                      <input type="radio" class="scroll_next" name="jobChangeCount" id="q01_03" value="3"><label
+                        for="q01_03">3社</label>
+                      <input type="radio" class="scroll_next" name="jobChangeCount" id="q01_04" value="4"><label
+                        for="q01_04">4社</label>
+                      <input type="radio" class="scroll_next" name="jobChangeCount" id="q01_05" value="5"><label
+                        for="q01_05">5社以上</label>
+                    </div>
+                  </div>
+
+                  <!-- 経験職種 -->
+                  <div class="form_slide form_slide02 form_radio">
+                    <div class="header">
+                      <div class="q_num">Q2</div>
+                      <div class="-num"><span class="-emphasis">2</span>/8</div>
+                      <div class="progress">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="question"><span class="-emphasis">経験職種</span>を教えてください</div>
+                    </div>
+                    <div class="answer">
+                      <input type="radio" class="scroll_next" name="job" id="q02_01" value="営業職"
+                        required="required"><label for="q02_01">営業職</label>
+                      <input type="radio" class="scroll_next" name="job" id="q02_02" value="企画職"><label
+                        for="q02_02">企画職</label>
+                      <input type="radio" class="scroll_next" name="job" id="q02_03" value="コンサル"><label
+                        for="q02_03">コンサル</label>
+                      <input type="radio" class="scroll_next" name="job" id="q02_04" value="マーケター"><label
+                        for="q02_04">マーケター</label>
+                      <input type="radio" class="scroll_next" name="job" id="q02_05" value="人事"><label
+                        for="q02_05">人事</label>
+                      <input type="radio" class="scroll_next" name="job" id="q02_06" value="SE"><label
+                        for="q02_06">SE</label>
+                      <input type="radio" class="scroll_next" name="job" id="q02_07" value="研究開発"><label
+                        for="q02_07">研究開発</label>
+                      <input type="radio" class="scroll_next" name="job" id="q02_08" value="総務"><label
+                        for="q02_08">総務</label>
+                      <input type="radio" class="scroll_next" name="job" id="q02_09" value="経理"><label
+                        for="q02_09">経理</label>
+                      <input type="radio" class="scroll_next" name="job" id="q02_10" value="広報"><label
+                        for="q02_10">広報</label>
+                      <input type="radio" class="scroll_next" name="job" id="q02_11" value="販売"><label
+                        for="q02_11">販売</label>
+                      <input type="radio" class="scroll_next" name="job" id="q02_12" value="接客"><label
+                        for="q02_12">接客</label>
+                      <input type="radio" class="scroll_next" name="job" id="q02_13" value="事務"><label
+                        for="q02_13">事務</label>
+                      <input type="radio" class="scroll_next" name="job" id="q02_14" value="その他"><label
+                        for="q02_14">その他</label>
+                    </div>
+                    <div class="button">
+                      <span class="scroll_prev">戻る</span>
+                    </div>
+                  </div>
+
+                  <!-- 卒業年度 -->
+                  <div class="form_slide form_slide03 form_radio">
+                    <div class="header">
+                      <div class="q_num">Q3</div>
+                      <div class="-num"><span class="-emphasis">3</span>/8</div>
+                      <div class="progress">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="question"><span class="-emphasis">卒業年度</span>を教えてください</div>
+                    </div>
+                    <div class="answer">
+                      <input type="radio" class="scroll_next" name="graduationYear" id="q03_01" value="2024"
+                        required="required"><label for="q03_01">2024年</label>
+                      <input type="radio" class="scroll_next" name="graduationYear" id="q03_02" value="2023"><label
+                        for="q03_02">2023年</label>
+                      <input type="radio" class="scroll_next" name="graduationYear" id="q03_03" value="2022"><label
+                        for="q03_03">2022年</label>
+                      <input type="radio" class="scroll_next" name="graduationYear" id="q03_04" value="2021"><label
+                        for="q03_04">2021年</label>
+                      <input type="radio" class="scroll_next" name="graduationYear" id="q03_05" value="2020"><label
+                        for="q03_05">2020年</label>
+                      <input type="radio" class="scroll_next" name="graduationYear" id="q03_06" value="2019"><label
+                        for="q03_06">2019年</label>
+                      <input type="radio" class="scroll_next" name="graduationYear" id="q03_07" value="2018"><label
+                        for="q03_07">2018年</label>
+                      <input type="radio" class="scroll_next" name="graduationYear" id="q03_08" value="2017"><label
+                        for="q03_08">2017年</label>
+                      <input type="radio" class="scroll_next" name="graduationYear" id="q03_09" value="2016"><label
+                        for="q03_09">2016年</label>
+                      <input type="radio" class="scroll_next" name="graduationYear" id="q03_10" value="2015"><label
+                        for="q03_10">2015年</label>
+                      <input type="radio" class="scroll_next" name="graduationYear" id="q03_11" value="2014"><label
+                        for="q03_11">2014年</label>
+                      <input type="radio" class="scroll_next" name="graduationYear" id="q03_12" value="2013"><label
+                        for="q03_12">2013年</label>
+                      <input type="radio" class="scroll_next" name="graduationYear" id="q03_13" value="2012"><label
+                        for="q03_13">2012年</label>
+                      <input type="radio" class="scroll_next" name="graduationYear" id="q03_14" value="2011"><label
+                        for="q03_14">2011年</label>
+                      <input type="radio" class="scroll_next" name="graduationYear" id="q03_15" value="2010"><label
+                        for="q03_15">2010年</label>
+                      <input type="radio" class="scroll_next" name="graduationYear" id="q03_16" value="2009"><label
+                        for="q03_16">2009年</label>
+                      <input type="radio" class="scroll_next" name="graduationYear" id="q03_17" value="2008"><label
+                        for="q03_17">2008年</label>
+                      <input type="radio" class="scroll_next" name="graduationYear" id="q03_18" value="2007"><label
+                        for="q03_18">2007年以前</label>
+                    </div>
+                    <div class="button">
+                      <span class="scroll_prev">戻る</span>
+                    </div>
+                  </div>
+
+
+                  <!-- 卒業大学 -->
+                  <div class="form_slide form_slide04 form_text">
+                    <div class="header">
+                      <div class="q_num">Q4</div>
+                      <div class="-num"><span class="-emphasis">4</span>/8</div>
+                      <div class="progress">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="question"><span class="-emphasis">卒業学校名</span>を教えてください<span
+                          class="-required">必須</span></div>
+                    </div>
+                    <div class="answer">
+                      <span id="caution04" class="caution">※学校名を入力してください。</span>
+                      <input type="text" name="school" placeholder="⚪︎⚪︎大学" id="q04_01">
+                    </div>
+                    <div class="button">
+                      <span class="scroll_prev">戻る</span>
+                      <span id="scroll_next_04">次へ</span>
+                    </div>
+                  </div>
+
+                  <!-- 在籍企業名 -->
+                  <div class="form_slide form_slide05 form_text">
+                    <div class="header">
+                      <div class="q_num">Q5</div>
+                      <div class="-num"><span class="-emphasis">5</span>/8</div>
+                      <div class="progress">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="question"><span class="-emphasis">在籍企業名</span>を教えてください<span
+                          class="-required">必須</span></div>
+                    </div>
+                    <div class="answer">
+                      <span id="caution05" class="caution">※会社名を入力してください。</span>
+                      <input type="text" name="company" placeholder="株式会社アサイン" id="q05_01">
+                    </div>
+                    <div class="button">
+                      <span class="scroll_prev">戻る</span>
+                      <span id="scroll_next_05">次へ</span>
+                    </div>
+                  </div>
+
+                  <!-- 氏名 -->
+                  <div class="form_slide form_slide06 form_text">
+                    <div class="header">
+                      <div class="q_num">Q6</div>
+                      <div class="-num"><span class="-emphasis">6</span>/8</div>
+                      <div class="progress">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="question"><span class="-emphasis">氏名</span>を教えてください<span class="-required">必須</span>
+                      </div>
+                    </div>
+                    <div class="answer">
+                      <span id="caution06" class="caution">※氏名を入力してください。</span>
+                      <div>
+                        <input type="text" name="name" placeholder="浅井" required="required" id="q06_01">
+                        <input type="text" name="name" placeholder="太郎" required="required" id="q06_02">
+                      </div>
+                    </div>
+                    <div class="button">
+                      <span class="scroll_prev">戻る</span>
+                      <span id="scroll_next_06">次へ</span>
+                    </div>
+                  </div>
+
+                  <!-- メールアドレス -->
+                  <div class="form_slide form_slide07 form_text">
+                    <div class="header">
+                      <div class="q_num">Q7</div>
+                      <div class="-num"><span class="-emphasis">7</span>/8</div>
+                      <div class="progress">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="question"><span class="-emphasis">メールアドレス</span>を正しく入力してください<span
+                          class="-required">必須</span></div>
+                    </div>
+                    <div class="answer">
+                      <span id="caution07" class="caution">※メールアドレスを入力してください。</span>
+                      <input type="email" name="customerEmail" placeholder="mail@example.com" required="required"
+                        id="q07_01">
+                    </div>
+                    <div class="button">
+                      <span class="scroll_prev">戻る</span>
+                      <span id="scroll_next_07">次へ</span>
+                    </div>
+                  </div>
+
+                  <!-- 電話番号 -->
+                  <div class="form_slide form_slide08 form_text">
+                    <div class="header">
+                      <div class="q_num">Q8</div>
+                      <div class="-num"><span class="-emphasis">8</span>/8</div>
+                      <div class="progress">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="question"><span class="-emphasis">電話番号</span>を教えてください<span class="-required">必須</span>
+                      </div>
+                    </div>
+                    <div class="answer">
+                      <span id="caution08" class="caution">※電話番号を入力してください。</span>
+                      <input type="tel" name="phone" placeholder="09012345678" id="q08_01">
+                    </div>
+                    <div class="button">
+                      <a href="" target=”_blank”>個人情報取扱方針</a>をご確認ください。<br>
+                      <input type="button" value="上記に同意して申込み" id="form_submit">
+                      <input type="button" value="送信中..." id="form_submit_loading"><br>
+                      <span id="thanks_text">申し込みいただきありがとうございました。</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="site_footer">
+    <div class="site_footer_container container">
+      <img class="logo" src="img/logo.png" alt="assign logo">
+      <p class="copyright">©︎ASSIGN Inc. All Right Reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
